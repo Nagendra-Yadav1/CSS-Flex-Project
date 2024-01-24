@@ -1,0 +1,134 @@
+<!-- create the goal using flexbox also make sure it is responsive-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 50px 50px 0 50px;
+            background-color: #faf9f6;
+            min-height: 95vh;
+        }
+
+        .main {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+        }
+
+        #second-div {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .tile-image {
+            height: 11.5rem;
+            width: 17rem;
+            object-fit: cover;
+
+        }
+
+        .content {
+            height: 10rem;
+            width: 14rem;
+            font-size: 0.8rem;
+
+        }
+
+        .right-card {
+            margin-left: 3rem;
+        }
+
+        footer {
+            text-align: right;
+            color: midnightblue;
+        }
+
+        @media (max-width:430px) {
+            body {
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                text-align: center;
+                width: auto;
+            }
+            .logo{
+                height: 1rem;
+            }
+            #second-div {
+                flex-direction: column;
+                gap: 0rem;
+            }
+
+            .tile-image {
+                width: 100%;
+                height: 10rem;
+            }
+
+            .content {
+                width: 100%;
+                font-size: 0.9rem;
+                text-align: justify;
+            }
+
+            .right-card {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+            .card-title{
+                margin-top: 0px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img class="logo" src="https://i.ibb.co/zr3L4QS/logo.png" alt="logo">
+        <h1>We are a <span style="color: rgb(66, 66, 131);">Creative</span> <br>Design Agency</h1>
+
+
+
+
+        <div id="second-div">
+            <div class="left card"><img class="tile-image" src="https://i.ibb.co/GxDTyCR/beautiful.jpg"
+                    alt="hand and flower in water">
+            </div>
+            <div class="content">
+                <h2 class="card-title">Beauty</h2>
+                <p class="card-text">We strive to create the most beautiful websites for all your needs. Working
+                    closely with you to design and develop an amazing website for your business.</p>
+            </div>
+
+            <div class="right-card"><img class="tile-image" src="https://i.ibb.co/R0Qv0tF/construction.jpg"
+                    alt="metal structure">
+            </div>
+            <div class="content">
+                <h2 class="card-title">Construction</h2>
+                <p>Built by our team of professional developers, we ensure the most rigourous and modern websites.
+                    Built from scratch using HTML and CSS. Only the best for you.</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>Create. Develop. Design.</p>
+    </footer>
+</body>
+
+</html>
